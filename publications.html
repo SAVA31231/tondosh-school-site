@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font heading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- text heading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header--back">
+            <a href="main.html">
+                <img class="header-logo" src="image/logo.png" alt="Logo">
+            </a>
+            <div class="header-nav" id="primary-nav">
+                <nav><a class="header-link open-sans" href="main.html">Главная</a></nav>
+                <nav><a class="header-link open-sans" href="about-us.html">О школе</a></nav>
+                <nav><a class="header-link open-sans" href="gallary.html">Галерея</a></nav>
+                <nav><a class="header-link open-sans" href="news.html">Новости</a></nav>
+                <nav><a class="header-link open-sans" href="publications.html">Публикации</a></nav>
+            </div>
+            <button class="burger-menu" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-nav">
+                <span class="burger-menu-line"></span>
+                <span class="burger-menu-line"></span>
+                <span class="burger-menu-line"></span>
+            </button>
+        </header>
+        <main> 
+            <section class="publication">
+                <div class="publication-title">
+                    <h1 class="bebas-neue">ПУБЛИКАЦИИ</h1>
+                    <h2 class="bebas-neue">МАТЕРИАЛЫ И СТАТЬИ ТОНДОШЕНСКОЙ ООШ</h2>
+                    <select class="publication-filter-select">
+                        <option value="2023-06-25" class="open-sans">2022-2023</option>
+                        <option value="2023-05-12" class="open-sans">2024-2025</option>
+                        <option value="2023-03-01" class="open-sans">2026-2027</option>
+                    </select>
+                </div>
+                <div class="publication-archive">
+                    <div class="publication-block">
+                        <img class="publication-img" src="publication-img/1.png" alt="1">
+                        <div class="publication-text">
+                            <p class="opacity-text open-sans">ДЕТСКИЕ ИНИЦИАТИВЫ И ТВОРЧЕСТВО</p>
+                            <h2 class="publication-heading bebas-neue">ШКОЛЬНЫЙ АЛЬМАНАХ: ЖИЗНЬ НАШЕЙ ШКОЛЫ 2023</h2>
+                            <time class="opacity-text open-sans" datetime="2023">ОПУБЛИКОВАНО В 2023</time>
+                            <p class="open-sans">Сборник, в котором собраны самые яркие моменты из жизни школы. Здесь можно найти заметки о прошедших праздниках, интересные фотографии с внеклассных занятий, а также рисунки и творческие работы наших ребят.</p>
+                            <button class="publication-btn bebas-neue-big">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="publication-block reverse">
+                        <img class="publication-img" src="publication-img/2.png" alt="2">
+                        <div class="publication-text">
+                            <p class="opacity-text open-sans">ИТОГИ УЧЕБНОГО ГОДА</p>
+                            <h2 class="publication-heading bebas-neue">ФОТОАЛЬБОМ ШКОЛЬНОЙ ЖИЗНИ 2023</h2>
+                            <time class="opacity-text open-sans" datetime="2023">ОПУБЛИКОВАНО В 2023</time>
+                            <p class="open-sans">В этом издании собраны самые яркие моменты из жизни нашей школы за прошедший год. Здесь можно посмотреть фотографии с линеек, классных часов, спортивных соревнований и обычных школьных будней. Издание будет интересно ученикам, их родителям и выпускникам.</p>
+                            <b class="open-sans">5 СТРАНИЦ, ЦВЕТНЫЕ ИЛЛЮСТРАЦИИ</b>
+                            <button class="publication-btn bebas-neue-big">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="publication-block">
+                        <img class="publication-img" src="publication-img/3.png" alt="3">
+                        <div class="publication-text">
+                            <p class="opacity-text open-sans">ПРОЕКТЫ И ВНЕУРОЧНАЯ ДЕЯТЕЛЬНОСТЬ</p>
+                            <h2 class="publication-heading bebas-neue">КОПИЛКА ДОБРЫХ ДЕЛ НАШЕЙ ШКОЛЫ</h2>
+                            <time class="opacity-text open-sans" datetime="2023">ОПУБЛИКОВАНО В 2023</time>
+                            <p class="open-sans">Сборник рассказывает о школьных акциях, конкурсах и полезных инициативах, в которых принимали участие наши ученики. Это отчет о том, как ребята вместе с учителями помогали школе, участвовали в субботниках и делали жизнь интереснее.</p>
+                            <button class="publication-btn bebas-neue-big">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="publication-block reverse">
+                        <img class="publication-img" src="publication-img/4.png" alt="4">
+                        <div class="publication-text">
+                            <p class="opacity-text open-sans">ВНЕУРОЧНАЯ ДЕЯТЕЛЬНОСТЬ</p>
+                            <h2 class="publication-heading bebas-neue">КЛУБ НАСТОЛЬНЫХ ИГР «ХОД КОНЕМ» 2023</h2>
+                            <time class="opacity-text open-sans" datetime="2023">ОПУБЛИКОВАНО В 2023</time>
+                            <p class="open-sans">В этом издании собрана информация о работе нашего школьного клуба настольных игр. Здесь можно найти фотографии с прошедших игротек, обзоры новинок и расписание встреч. Клуб открыт для всех учеников, которые хотят интересно провести время, научиться стратегически мыслить и найти новых друзей.</p>
+                            <button class="publication-btn bebas-neue-big">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-block-logo"> 
+                <ul class="footer-links">
+                    <li class="footer-link open-sans">Будущие ученики</li>
+                    <li class="footer-link open-sans">Учащиеся</li>
+                    <li class="footer-link open-sans">Выпускники</li>
+                    <li class="footer-link open-sans">Спонсоры</li>
+                    <li class="footer-link open-sans">Гости</li>
+                </ul>
+                <img class="footer-img" src="image/logo.png" alt="footer-img">
+                <ul class="footer-links links-right">
+                    <li class="footer-link open-sans">Новости и СМИ</li>
+                    <li class="footer-link open-sans">О нас</li>
+                    <li class="footer-link open-sans">Учёба</li>
+                    <li class="footer-link open-sans">Программы</li>
+                    <li class="footer-link open-sans">Мероприятия</li>
+                    <li class="footer-link open-sans">Публикации</li>
+                </ul>
+            </div>
+            <div class="footer-block-social">
+                <div class="footer-social">
+                    <h3 class="bebas-neue">Мы в соцсетях</h3>
+                    <img class="img-social" src="image-main/twitter.png" alt="twitter">
+                    <img class="img-social" src="image-main/facebook.png" alt="facebook">
+                    <img class="img-social" src="image-main/in.png" alt="in">
+                    <img class="img-social" src="image-main/instagram.png" alt="instagram">
+                </div>
+                <p class="open-sans">© Тондошенская школа</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
