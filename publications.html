@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="libs/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <!-- font heading -->
@@ -18,11 +19,11 @@
 <body>
     <div class="container">
         <header class="header--back">
-            <a href="main.html">
+            <a href="index.html">
                 <img class="header-logo" src="image/logo.png" alt="Logo">
             </a>
             <div class="header-nav" id="primary-nav">
-                <nav><a class="header-link open-sans" href="main.html">Главная</a></nav>
+                <nav><a class="header-link open-sans" href="index.html">Главная</a></nav>
                 <nav><a class="header-link open-sans" href="about-us.html">О школе</a></nav>
                 <nav><a class="header-link open-sans" href="gallary.html">Галерея</a></nav>
                 <nav><a class="header-link open-sans" href="news.html">Новости</a></nav>
@@ -35,7 +36,7 @@
             </button>
         </header>
         <main> 
-            <section class="publication">
+            <section class="publication" data-aos="fade-up">
                 <div class="publication-title">
                     <h1 class="bebas-neue">ПУБЛИКАЦИИ</h1>
                     <h2 class="bebas-neue">МАТЕРИАЛЫ И СТАТЬИ ТОНДОШЕНСКОЙ ООШ</h2>
@@ -122,5 +123,12 @@
         </footer>
     </div>
 </body>
+<script src="libs/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true   
+  });
+</script>
 <script src="script.js"></script>
 </html>

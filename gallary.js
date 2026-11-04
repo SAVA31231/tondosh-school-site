@@ -1,14 +1,11 @@
-const desktopQuery = window.matchMedia('(min-width: 640px)');
+burgerMenu.addEventListener('click', toggleMobileMenu);
 
-function handleScreenResize(event) { 
-    if (event.matches) {
-        galleryContainer.classList.add('show-all');
-        moreBtn.textContent = 'Меньше';
-    } else {
-        galleryContainer.classList.remove('show-all');
-        moreBtn.textContent = 'Больше';
-    }
-}
+const moreBtn = document.querySelector('.more'); 
+const galleryContainer = document.querySelector('.gallary-pictures');
 
-handleScreenResize(desktopQuery);
-desktopQuery.addEventListener('change', handleScreenResize);
+moreBtn.addEventListener('click', () => { 
+    galleryContainer.classList.toggle('show-all');
+    
+    const isExpanded = galleryContainer.classList.contains('show-all');
+    moreBtn.textContent = isExpanded ? 'Меньше' : 'Больше';
+});

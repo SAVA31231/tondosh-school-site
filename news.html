@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="libs/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 
     <!-- font heading -->
@@ -18,11 +20,11 @@
 <body>
     <div class="container">
         <header class="header--back">
-            <a href="main.html">
+            <a href="index.html">
                 <img class="header-logo" src="image/logo.png" alt="Logo">
             </a>
             <div class="header-nav" id="primary-nav">
-                <nav><a class="header-link open-sans" href="main.html">Главная</a></nav>
+                <nav><a class="header-link open-sans" href="index.html">Главная</a></nav>
                 <nav><a class="header-link open-sans" href="about-us.html">О школе</a></nav>
                 <nav><a class="header-link open-sans" href="gallary.html">Галерея</a></nav>
                 <nav><a class="header-link open-sans" href="news.html">Новости</a></nav>
@@ -35,7 +37,7 @@
             </button>
         </header>
         <main>
-            <section class="block-news">
+            <section class="block-news" data-aos="fade-up">
                 <div class="box-news">
                     <h1 class="Heading-news bebas-neue">НОВОСТИ</h1>
                     <h2 class="bebas-neue">ШКОЛЬНАЯ ЖИЗНЬ</h2>
@@ -69,31 +71,33 @@
                     </div>
                 </div>
             </section>
-            <section class="main-news">
-                <h2 class="main-news-heading bebas-neue">ШКОЛЬНЫЕ СОБЫТИЯ</h2>
-                <div class="main-news-boxs">
-                    <div class="main-news-box">
+            <section class="news-swiper">
+            <div class="swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <img src="news-img/1.png" alt="1">
                         <h3 class="bebas-neue">ШКОЛЬНАЯ ЖИЗНЬ: ВАЖНЫЕ СОБЫТИЯ И ДОСТИЖЕНИЯ</h3>
                         <time datetime="10-04-2024" class="open-sans">10 АПРЕЛЯ 2024</time>
                         <p class="open-sans">В Тондошенской основной общеобразовательной школе прошло очередное мероприятие. Ученики и педагоги приняли активное участие в...</p>
                         <button class="text-btn bebas-neue-big">Читать далее</button>
                     </div>
-                    <div class="main-news-box">
-                        <img src="news-img/2.png" alt="1">
+                    <div class="swiper-slide">
+                        <img src="news-img/2.png" alt="2">
                         <h3 class="bebas-neue">НАША ШКОЛА В РАЙОНЕ: УЧАСТИЕ В ПРОЕКТАХ</h3>
                         <time datetime="15-05-2024" class="open-sans">15 МАЯ 2024</time>
                         <p class="open-sans">Ученики нашей школы приняли активное участие в районных соревнованиях. Это позволило ребятам проявить свои...</p>
                         <button class="text-btn bebas-neue-big">Читать далее</button>
                     </div>
-                    <div class="main-news-box">
-                        <img src="news-img/3.png" alt="1">
+                    <div class="swiper-slide">
+                        <img src="news-img/3.png" alt="3">
                         <h3 class="bebas-neue">АКТИВНАЯ ШКОЛЬНАЯ ЖИЗНЬ И ТВОРЧЕСТВО</h3>
                         <time datetime="25-04-2024" class="open-sans">25 МАЯ 2024</time>
                         <p class="open-sans">В стенах школы состоялся концерт, посвященный окончанию учебного года. Ребята подготовили творческие номера...</p>
                         <button class="text-btn bebas-neue-big">Читать далее</button>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
+            </div>
             </section>
         </main>
         <footer>
@@ -127,6 +131,15 @@
             </div>
         </footer>
     </div>
+    <script src="libs/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="libs/swiper-bundle.min.js"></script>
+    <script src="news.js"></script>
     <script src="script.js"></script>
 </body>
 </html

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="libs/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <!-- font heading -->
@@ -18,11 +19,11 @@
 <body>
     <div class="container">
         <header class="header--back">
-            <a href="main.html">
+            <a href="index.html">
                 <img class="header-logo" src="image/logo.png" alt="Logo">
             </a>
             <div class="header-nav" id="primary-nav">
-                <nav><a class="header-link open-sans" href="main.html">Главная</a></nav>
+                <nav><a class="header-link open-sans" href="index.html">Главная</a></nav>
                 <nav><a class="header-link open-sans" href="about-us.html">О школе</a></nav>
                 <nav><a class="header-link open-sans" href="gallary.html">Галерея</a></nav>
                 <nav><a class="header-link open-sans" href="news.html">Новости</a></nav>
@@ -35,7 +36,7 @@
             </button>
         </header>
         <main>
-            <section class="menu">
+            <section class="menu" data-aos="fade-up">
                 <ul class="menu-list">
                     <li class="menu-list-li open-sans"><a href="#"><b>Миссия школы</b></a></li>
                     <li class="menu-list-li open-sans"><a href="#"><b>О родине и наследии</b></a></li>
@@ -46,7 +47,7 @@
                     <li class="menu-list-li open-sans"><a href="#"><b>История и о сайте</b></a></li>
                 </ul>
             </section>
-            <section class="about">
+            <section class="about" data-aos="fade-up">
                 <img class="about-img" src="about/school.png" alt="school">
                 <div class="about-text">
                     <h2 class="bebas-neue">Тондошенская основная общеобразовательная школа — это место, где дети получают прочные знания по всем предметам и учатся применять их в жизни.</h2>
@@ -61,7 +62,7 @@
                     </p>
                 </div>
             </section>
-            <section class="programs">
+            <section class="programs" data-aos="fade-up">
                 <div class="programs-title">
                     <img class="programs-img" src="about/boy.png" alt="boy">
                     <div class="programs-text">
@@ -74,7 +75,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="programs-events">
+                <div class="programs-events" data-aos="fade-up">
                     <img class="programs-img" src="about/girl.png" alt="girl">
                     <div class="programs-text">
                         <h2 class="bebas-neue">Мероприятия и выставки</h2>
@@ -123,5 +124,12 @@
         </footer>
     </div>
 </body>
+<script src="libs/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        once: true
+    });
+</script>
 <script src="script.js"></script>
 </html>

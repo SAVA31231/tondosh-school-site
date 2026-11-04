@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="libs/aos.css">
+    <link rel="stylesheet" href="libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 
     <!-- font heading -->
@@ -18,11 +20,11 @@
 <body>
     <div class="container">
         <header>
-            <a href="main.html">
+            <a href="index.html">
                 <img class="header-logo" src="image/logo.png" alt="Logo">
             </a>
             <div class="header-nav" id="primary-nav">
-                <nav><a class="header-link open-sans" href="main.html">Главная</a></nav>
+                <nav><a class="header-link open-sans" href="index.html">Главная</a></nav>
                 <nav><a class="header-link open-sans" href="about-us.html">О школе</a></nav>
                 <nav><a class="header-link open-sans" href="gallary.html">Галерея</a></nav>
                 <nav><a class="header-link open-sans" href="news.html">Новости</a></nav>
@@ -43,39 +45,42 @@
                     <a href="#" class="btn btn--transparent bebas-neue-big">Войти</a>
                 </div>
             </section>
-            <section class="slider">
-                <div class="slider-track">
-                    <div class="slider-block">
-                        <img class="slider-image" src="image-main/school.png" alt="school">
-                        <div class="slider-block-text">
-                            <h3 class="slider-block-heading bebas-neue">Школьная жизнь</h3>
-                            <p class="open-sans">Всё самое интересное здесь</p>
-                        </div>
-                    </div>  
-                    <div class="slider-block">
-                        <img class="slider-image" src="image-main/graduation.png" alt="graduation">
-                        <div class="slider-block-text">
-                            <h3 class="slider-block-heading bebas-neue">Выпускной</h3>
-                            <p class="open-sans">Путь во взрослую жизнь</p>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-block-img"><img class="swiper-img" src="image-main/school.png" alt=""></div>
+                        <div class="swiper-slide-text">
+                            <h2>Школьная жизнь</h2>
+                            <p>Всё самое интересное здесь</p>
                         </div>
                     </div>
-                    <div class="slider-block">
-                        <img class="slider-image" src="image-main/sport.png" alt="sport">
-                        <div class="slider-block-text">
-                            <h3 class="slider-block-heading bebas-neue">Спорт</h3>
-                            <p class="open-sans">Секции и соревнования</p>
+                    <div class="swiper-slide">
+                        <div class="swiper-block-img"><img class="swiper-img" src="image-main/graduation.png" alt=""></div>
+                        <div class="swiper-slide-text">
+                            <h2>Выпускной</h2>
+                            <p>Путь во взрослую жизнь</p>
                         </div>
                     </div>
-                    <div class="slider-block">
-                        <img class="slider-image" src="image-main/girl.png" alt="girl">
-                        <div class="slider-block-text">
-                            <h3 class="slider-block-heading bebas-neue">Общение</h3>
-                            <p class="open-sans">Друзья и мероприятия</p>
+                    <div class="swiper-slide">
+                        <div class="swiper-block-img"><img class="swiper-img" src="image-main/sport.png" alt=""></div>
+                        <div class="swiper-slide-text">
+                            <h2>Спорт</h2>
+                            <p>Секции и соревнования</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-block-img"><img class="swiper-img" src="image-main/girl.png" alt=""></div>
+                        <div class="swiper-slide-text">
+                            <h2>Общение</h2>
+                            <p>Друзья и мероприятия</p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="benefits">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <section class="benefits" data-aos="fade-up">
                 <div class="benefits-text-block">
                     <h2 class="heading bebas-neue">Почему Тондошенская школа</h2> 
                     <p class="benefits-text open-sans">
@@ -86,7 +91,7 @@
                 </div>
                 <img class="benefit-img imagery" src="image-main/student.png" alt="student">
             </section>
-            <section class="admission">
+            <section class="admission" data-aos="fade-up">
                 <div class="admission-block">
                     <img class="admission-img" src="image-main/group.png" alt="group">
                     <div class="admission-block-text">
@@ -96,7 +101,7 @@
                         <a class="btn btn--admission bebas-neue-big" href="#">Записаться</a>
                     </div>
                 </div>
-                <div class="admission-posts">
+                <div class="admission-posts" data-aos="fade-up">
                     <h2 class="admission-heading bebas-neue">Наши новости</h2>
                     <div class="admission-track">
                         <div class="post">
@@ -132,7 +137,7 @@
                     </div>
                 </div>
             </section>
-            <section class="magazine">
+            <section class="magazine" data-aos="fade-up">
                 <div class="magazine-panel">
                     <div class="magazine-title">
                         <h2 class="magazine-heading bebas-neue">Школьный журнал</h2>
@@ -185,6 +190,15 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="libs/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script src="libs/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script defer src="script.js"></script>
 </body>
 </html

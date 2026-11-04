@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="libs/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <!-- font heading -->
@@ -18,11 +19,11 @@
 <body>
     <div class="container">
         <header class="header--back">
-            <a href="main.html">
+            <a href="index.html">
                 <img class="header-logo" src="image/logo.png" alt="Logo">
             </a>
             <div class="header-nav" id="primary-nav">
-                <nav><a class="header-link open-sans" href="main.html">Главная</a></nav>
+                <nav><a class="header-link open-sans" href="index.html">Главная</a></nav>
                 <nav><a class="header-link open-sans" href="about-us.html">О школе</a></nav>
                 <nav><a class="header-link open-sans" href="gallary.html">Галерея</a></nav>
                 <nav><a class="header-link open-sans" href="news.html">Новости</a></nav>
@@ -35,13 +36,13 @@
             </button>
         </header>
         <main>
-            <section class="gallary-text">
+            <section class="gallary-text" data-aos="fade-up">
                 <p class="open-sans">Школьный выставочный зал и коридоры школы служат круглогодичной площадкой для работ учеников, учителей и приглашённых гостей из других школ и организаций. Здесь регулярно проходят выставки, конкурсы и творческие показы, где каждый может показать свои работы и увидеть достижения других.</p>
                 <p class="open-sans">Во время выставок зал открыт для всех учеников, родителей и гостей школы. Расписание работы зависит от учебного года и меняется в зависимости от мероприятий и каникул. Информация о предстоящих выставках публикуется на сайте школы и в объявлениях.</p>
             </section>
             <section class="block-gallary-pictures">
                 <div class="gallary-pictures">
-                    <div class="picture">
+                    <div class="picture" data-aos="fade-up">
                         <img src="gallary-img/1.png" alt="1">
                         <div class="picture-text">
                             <h2 class="bebas-neue">Творчество</h2>
@@ -49,7 +50,7 @@
                             <p class="open-sans">Фотокружок Тондошенской школы</p>
                         </div>
                     </div>
-                    <div class="picture">
+                    <div class="picture" data-aos="fade-up">
                         <img src="gallary-img/2.png" alt="2">
                         <div class="picture-text">
                             <h2 class="bebas-neue">Творчество</h2>
@@ -57,7 +58,7 @@
                             <p class="open-sans">Фотокружок Тондошенской школы</p>
                         </div>
                     </div>
-                    <div class="picture">
+                    <div class="picture" data-aos="fade-up">
                         <img src="gallary-img/3.png" alt="3">
                         <div class="picture-text">
                             <h2 class="bebas-neue">Творчество</h2>
@@ -65,7 +66,7 @@
                             <p class="open-sans">Фотокружок Тондошенской школы</p>
                         </div>
                     </div>
-                    <div class="picture">
+                    <div class="picture" data-aos="fade-up">
                         <img src="gallary-img/4.png" alt="4">
                         <div class="picture-text">
                             <h2 class="bebas-neue">Творчество</h2>
@@ -73,7 +74,7 @@
                             <p class="open-sans">Фотокружок Тондошенской школы</p>
                         </div>
                     </div>
-                    <div class="picture">
+                    <div class="picture" data-aos="fade-up">
                         <img src="gallary-img/5.png" alt="5">
                         <div class="picture-text">
                             <h2 class="bebas-neue">Творчество</h2>
@@ -81,7 +82,7 @@
                             <p class="open-sans">Фотокружок Тондошенской школы</p>
                         </div>
                     </div>
-                    <div class="picture">
+                    <div class="picture" data-aos="fade-up">
                         <img src="gallary-img/6.png" alt="6">
                         <div class="picture-text">
                             <h2 class="bebas-neue">Творчество</h2>
@@ -89,7 +90,7 @@
                             <p class="open-sans">Фотокружок Тондошенской школы</p>
                         </div>
                     </div>
-                    <div class="picture">
+                    <div class="picture" data-aos="fade-up">
                         <img src="gallary-img/7.png" alt="7">
                         <div class="picture-text">
                             <h2 class="bebas-neue">Творчество</h2>
@@ -97,7 +98,7 @@
                             <p class="open-sans">Фотокружок Тондошенской школы</p>
                         </div>
                     </div>
-                    <div class="picture">
+                    <div class="picture" data-aos="fade-up">
                         <img src="gallary-img/8.png" alt="8">
                         <div class="picture-text">
                             <h2 class="bebas-neue">Творчество</h2>
@@ -105,7 +106,7 @@
                             <p class="open-sans">Фотокружок Тондошенской школы</p>
                         </div>
                     </div>
-                    <button class="picture-add">
+                    <button class="picture-add" data-aos="fade-up">
                         <img src="gallary-img/plus.png" alt="plus">
                     </button>
                 </div>
@@ -145,6 +146,13 @@
         </footer>
     </div>
 </body>
+<script src="libs/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        once: true
+    });
+</script>
 <script src="script.js"></script>
 <script src="gallary.js"></script>
 </html>
